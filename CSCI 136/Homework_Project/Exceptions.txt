@@ -1,0 +1,13 @@
+Why I Chose My Exceptions:
+
+I chose to do try-catches surrounded by a while loop to get the user to enter a number because it seemed the the best way to 
+handle an input mismatch excpetion for the integers
+
+I chose to do pattern matching for almost all of my user input that was strings because it wont
+say input mismatch error because technically a number will just be taken as a string but since i wanted
+only strings containing letters from the user i did it that way. It allowed me to limit the 
+input to letters and not numbersand in some cases allowed me to force a specific pattern in order to avoid
+ a parse error.
+ 
+ I used some while loops in some places to continue to prompt the user until they entered one of the actions that was presented 
+ which avoid an input mismatch error and a sudden crash.

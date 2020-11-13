@@ -1,0 +1,10 @@
+Architect,5,120,20,Light Attack
+Architect,7,140,30,Light Attack
+Siteseer,10,150,40,Lightning Strike Attack
+Siteseer,2,100,25,Lightning Strike Attack
+Lunatic,4,120,28,Small Blade Attack
+Lunatic,6,130,34,Small Blade Attack
+Destroyer,5,90,40,Drone Attack
+Destroyer,8,120,44,Drone Attack
+Competitor,7,130,35,Physical Attack
+Competitor,7,130,35,Physical Attack

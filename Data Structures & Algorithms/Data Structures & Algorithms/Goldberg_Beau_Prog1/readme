@@ -1,0 +1,155 @@
+/******************************************************************************
+ *  Name:     Beau Goldberg
+ *  NetID:    790789147
+ *
+ *  Hours to complete assignment (optional):
+ * ~12 hours
+ ******************************************************************************/
+
+Programming Assignment 1: Percolation
+
+
+/******************************************************************************
+ *  Describe how you implemented Percolation.java. How did you check
+ *  whether the system percolates?
+ *****************************************************************************/
+I implemented Percolation by creating a N by N grid using a double array and then 
+also created a UnionFind instance as well and determined how the indexes would correspond 
+between the double array and the UnionFind. Once i was able to determine that I created
+all of the methods and was able to check whether the system percolates by using two extra points
+in the UF instance, one for the top and one for the bottom and if a index in the first row was
+opened it connects to the top index and same for the bottom row. That way i could just check if 
+the bottom and the top are connected and if they are then the system percolates.
+
+
+/******************************************************************************
+ *  Perform computational experiments to estimate the running time of
+ *  PercolationStats.java for values values of n and T when implementing
+ *  Percolation.java with QuickFindUF.java.
+ *
+ *  To do so, fill in the two tables below. Each table must have at least
+ *  4 data points, ranging in time from around 0.1 seconds to around
+ *  60 seconds. Do not include data points that takes less than 0.1 seconds.
+ *  Each data point should be a multiple of the preceding data point
+ *****************************************************************************/
+
+(keep T constant)
+     T=50
+ n          time (seconds)
+------------------------------
+40			.113
+80			.641
+160			8.228
+320			128.276
+
+
+
+(keep n constant)
+      n = 30
+ T          time (seconds)
+------------------------------
+150			.102
+300			.154
+600			.25
+1200		.473
+2400		.911
+
+
+/******************************************************************************
+ *  Using the empirical data from the above two tables, give a formula 
+ *  (using tilde notation) for the running time (in seconds) of
+ *  PercolationStats.java as function of both n and T, such as
+ *
+ *       ~ 5.3*10^-8 * n^5.0 T^1.5
+ *
+ *  Recall that with tilde notation, you include both the coefficient
+ *  and exponents of the leading term (but not lower-order terms).
+ *  Round each coefficient to two significant digits.
+ *
+ *****************************************************************************/
+
+running time (in seconds) as a function of n and T:  ~ 
+					~ x(t) = 2e-6N^3
+
+/******************************************************************************
+ *  Repeat the previous two questions, but using WeightedQuickUnionUF
+ *  (instead of QuickFindUF).
+ *****************************************************************************/
+
+(keep T constant)
+        T=50
+ n         time (seconds)
+------------------------------
+100			0.115
+200			0.302
+400  		1.202
+800			6.871
+1600		39.008
+
+(keep n constant)
+		n=50
+ T          time (seconds)
+------------------------------
+200			0.118
+400			0.199
+800			0.304
+1600		0.516
+3200		0.959
+
+
+running time (in seconds) as a function of n and T:  ~ 
+							~ x(t) = 2e-7N^2.5 
+
+/**********************************************************************
+ *  How much memory (in bytes) does a Percolation object (which uses
+ *  WeightedQuickUnionUF.java) use to store an n-by-n grid? Use the
+ *  64-bit memory cost model from Section 1.4 of the textbook and use
+ *  tilde notation to simplify your answer. Briefly justify your
+ *  answers.
+ *
+ *  Include the memory for all referenced objects (deep memory).
+ **********************************************************************/
+8N^2 + 32 + 64N + 45 = 8N^2 + 64N + 77 bytes
+
+ 
+/******************************************************************************
+ *  Known bugs / limitations.
+ *****************************************************************************/
+I believe i worked out all of the bugs that i ran into in writing the code.
+
+
+
+/******************************************************************************
+ *  Describe whatever help (if any) that you received.
+ *  Don't include readings, lectures, and precepts, but do
+ *  include any help from people (including course staff, TA,
+ *  classmates, and friends) and attribute them by name.
+ *****************************************************************************/
+I got together with Kellen Donahue and spoke with Cole Brooks about the conceptual ideas pertaining 
+to the project in relation to the mainly relating the double array to the UnionFind instance and 
+to get a clearer understanding of what the main goal we were trying to accomplish with the project 
+because i was confused in reading the directions.
+
+/******************************************************************************
+ *  Describe any serious problems you encountered.                    
+ *****************************************************************************/
+As i briefly stated in the previous text, i ran into an issue of not clearly understanding what i 
+needed to reach as an end goal because i have never seen directions like the ones that were given and 
+found them to be relatively broad and open for interpretation when i needed a little more clarification.
+Once i was clear with the end goal i was then able to plan my program conceptually and then implement it.
+I had a hard time figuring out how to run the visualizer in eclipse until i figured out how to pass 
+text files in through the properties of the program. Other than that it went well.
+
+
+
+/******************************************************************************
+ *  List any other comments here. Feel free to provide any feedback   
+ *  on how much you learned from doing the assignment, and whether    
+ *  you enjoyed doing it.                                             
+ *****************************************************************************/
+I know this class is the beggining of upper level CS and there is a lot more expected of us but i 
+found the directions for the assignment to be really broad and i wasnt able to clearly hone in on 
+the whole idea for awhile. I bet it is something that i will get used to as the class goes on and maybe
+i was just missing something but it felt like a big difference for me from my previous experience.
+Ill adapt to it and be more prepared for the next one though and it was a good lesson struggling through this 
+assignment.  

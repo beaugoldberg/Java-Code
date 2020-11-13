@@ -1,0 +1,71 @@
+PQtester Trials
+
+N=100
+t1=.001
+t2=.001
+t3=.001
+Average=.001
+
+N=1000
+t1=.004
+t2=.004
+t3=.005
+t4=.005
+Average=.0045
+
+N=10000
+t1=.022
+t2=.019
+t3=.020
+t4=.020
+Average=.020
+
+N=100000
+t1=.087
+t2=.084
+t3=.085
+t4=.092
+Average=.087
+
+N=10000000
+t1=.439
+t2=.432
+t3=.436
+t4=.440
+Average=.436
+
+N=100000000
+t1=4.509
+t2=4.677
+t3=4.649
+t4=4.736
+Average= 4.643
+
+Reasonable Values:
+Small N: 10^6-
+Large N: 10^8+
+HeapSort Trials(Time Spent in the Construction Phase)
+
+N=10^4
+t1=.026
+t2=.026
+t3=.028
+t4=.024
+Average=.026
+
+N=10^6
+t1=.308
+t2=.312
+t3=.317
+t4=.324
+Average=.315
+
+N=10^8
+t1=33.511
+t2=28.617
+t3=28.092
+t4=32.681
+Average=30.725
+
+The time appears to be growing linearly with the input size by factors of 10^2 so
+the experiment does agree with the theory
